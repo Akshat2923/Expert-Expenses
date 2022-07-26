@@ -1,0 +1,32 @@
+body{
+    font-family:sans-serif;
+    text-align:center;
+    background-color:antiquewhite;
+    color:brown;
+    
+    
+  
+}
+input,
+textarea,
+select {
+    margin:10px 100px 10px 100px;
+    width:65%;
+    padding: auto;
+    border: solid 3px burlywood;
+}
+::placeholder, select{
+    text-align:center;
+}
+h1{
+    padding: auto;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+  
