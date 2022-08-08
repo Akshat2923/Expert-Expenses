@@ -1,11 +1,9 @@
+
 body{
     font-family:sans-serif;
-    text-align:center;
-    background-color:antiquewhite;
+    text-align:center !important;
+    background-color: antiquewhite !important;
     color:brown;
-    
-    
-  
 }
 input,
 textarea,
@@ -16,7 +14,10 @@ select {
     border: solid 3px burlywood;
 }
 ::placeholder, select{
-    text-align:center;
+    text-align:center !important;
+}
+::placeholder{
+    color:black;
 }
 h1{
     padding: auto;
@@ -28,5 +29,7 @@ form {
     margin: 0 auto;
     padding-bottom: 2em;
 }
+
+
 
   

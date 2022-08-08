@@ -4,60 +4,79 @@
         <title>Expenses</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="./expenses_style.css"/>
+        <!--css link-->
+        <link rel="stylesheet" href="./expenses_style.css" type="text/css"/>
+        <!--bootstrap link-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <!--cool icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
     </head>
+    <div class="container-fluid">
+        <body>
+                      
+            <h1>Daily Expenses<span><img  width="50" class="img-responsive visible-lg-inline" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/344/external-calculator-money-kmg-design-detailed-outline-kmg-design.png" alt="Calculator Icon"/></span></h1>
+            <form>
+                <!--Dropdown-->
+                <div class="info">
+                    <label>Select Expense Type:
+                        <select name="expense-type">
+                            <option value="">(select one)</option>
+                            <option value="1">Costco</option>
+                            <option value="2">Amazon Prime</option>
+                            <option value="3">Indian Store</option>
+                            <option value="4">Walmart</option>
+                            <option value="5">Misc.</option>
+                        </select>
+                    </label>
+                </div>
 
-    <body>
-        <h1>Daily Expenses</h1>
-        <form>
-            <!--Dropdown-->
-            <div class="info">
-                <label>Select Expense Type:
-                    <select name="expense-type">
-                        <option value="">(select one)</option>
-                        <option value="1">Costco</option>
-                        <option value="2">Amazon Prime</option>
-                        <option value="3">Indian Store</option>
-                        <option value="4">Walmart</option>
-                        <option value="5">Misc.</option>
-                    </select>
-                </label>
-            </div>
+                <!--TodayDate-->
+                <div class="info">
+                    <label>Enter Date of Expense:
+                        <input type="date" name="today-date"/>
 
-            <!--TodayDate-->
-            <div class="info">
-                <label>Enter Date of Expense
-                    <input type="date" name="today-date"/>
+                    </label>
+                </div>
 
-                </label>
-            </div>
-
-            <!--CreditCard#-->
-            <div class="info">
-                <label>Credit Card Number for Expense
-                    <input required type="tel" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"/>
-                </label>
-            </div>
+                <!--CreditCard#-->
+                <div class="info">
+                    <label>Credit Card Number for Expense:
+                        <input required type="tel" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"/>
+                    </label>
+                </div>
 
 
-            <!--Description-->
-            <div class="info">
-                <label>Expense Description:
-                    <textarea name="description" rows="5" cols="15" placeholder="type here..."></textarea>
-                </label>
-            </div>
-            <div class="info">
-                <label>Input you Expense Amount(w/o $):
-                    <input type="number" name="money" min="1" max="3000" placeholder="Ex:5000"/>
-                </label>
-            </div>
+                <!--Description-->
+                <div class="info">
+                    <label>Expense Description:
+                        <textarea name="description" rows="5" cols="15" placeholder="type here..."></textarea>
+                    </label>
+                </div>
+                <div class="info">
+                    <label>Input you Expense Amount(w/o $):
+                        <input type="number" name="money" min="1" max="3000" placeholder="Ex:5000"/>
+                    </label>
+                </div>
+                
+                <!--Buttons-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-block btn-primary"><i class="fa fa-plus"></i>Add</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i>Delete</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn btn-block btn-primary"><i class="fa fa-info-circle"></i>Info</button>
+                    </div>
+                </div>
+
+            </form>
             
-            <!--Buttons-->
-            <button type="button">Add</button>
-            <button type="button">Delete</button>
-            <button type="button">Update</button>
-        </form>
-    </body>
+        </body>
+    </div>
 </html>
